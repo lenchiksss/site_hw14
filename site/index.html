@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>.NET DEV</title>
+        <meta name="description" content="Сайт-візитка"/>
+        <meta name="keywords" content="Сайт-візитка, Website business card, .NET"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link type="image/png" sizes="32×32" rel="icon" href="./img/favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+    </head>
+    <body class="body">
+        <div class="page">
+            <header class="header">
+                <div class="header__inner">
+                    <div class="fixed"><img class="fixed__image" src="./img/fixed.png"></div>
+                    <a class ="header__logo" href="index.html">Olena Zozulia</a>
+                    <div class="sandwich">
+                        <input type="checkbox" id="burger">
+                        <label class="nav__burger" for="burger">&#9776;</label>
+                        <nav class="sandwich-menu">
+                            <ul class="sandwich-menu__list">
+                                <li class="sandwich-menu__list-item"><a class="menu__link" href="index.html#About me">About me</a></li>
+                                <li class="sandwich-menu__list-item"><a class="menu__link" href="index.html#Skills">Skills</a></li>
+                                <li class="sandwich-menu__list-item"><a class="menu__link" href="index.html#Contacts">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a class="menu__link" href="index.html#About me">About me</a></li>
+                            <li class="menu__list-item"><a class="menu__link" href="index.html#Skills">Skills</a></li>
+                            <li class="menu__list-item"><a class="menu__link" href="index.html#Contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main class="main">
+                <div class="main__inner">
+                    <section class="main__section">
+                        <h2 class="title" id="About me">About me</h2>
+                        <h3 class="title">I'm a .NET Developer intern</h2>
+                        <div class="content">
+                            <img class="picture" src="./img/my_photo.jpg">
+                            <p class="text">My name is Zozulia Olena. I am from the Kharkiv region. I am a second-year student at the 
+                                Kharkiv National University of Radio Electronics, studying Software Engineering. I am a student with a deep desire 
+                                to work in the field of programming, but no work experience. I want to find an internship to improve my programming 
+                                skills in order to be a good programmer in the future and work in companies.</p>
+                        </div>
+                        <h2 class="title" id="Skills">Skills</h2>
+                        <div class="container">
+                            <ul class="skills-list">
+                                <li>C#</li>
+                                <li>REST API</li>
+                                <li>ASP.NET MVC</li>
+                                <li>Dapper ORM</li>
+                                <li>ASP.NET</li>
+                                <li>MongoDB</li>
+                                <li>Language Integrated Query (LINQ)</li>
+                                <li>SQL Server Management Studio</li>
+                                <li>ADO.NET</li>
+                                <li>Cascading Style Sheets (CSS)</li>
+                                <li>Git</li>
+                                <li>Microsoft SQL Server</li>
+                                <li>Windows Presentation Foundation (WPF)</li>
+                                <li>SOLID Design Principles</li>
+                                <li>Object-Oriented Programming (OOP)</li>
+                                <li>WinForms</li>
+                                <li>HTML5</li>
+                                <li>Bootstrap (Framework)</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <h2 class="title" id="Contacts">Contacts</h2>
+                        <p class="text-f">You can leave a request in the form below, I will contact you</p>
+                        <form class="form">
+                            <div class="form__group">
+                                <label for="name" class="form__label">Ім'я користувача:</label>
+                                <input type="text" placeholder="abc" id="name" minlength="2" maxlength="10" required class="form__input">
+                            </div>
+                            <div class="form__group">
+                                <label for="email" class="form__label">Електронна пошта:</label>
+                                <input type="email" placeholder="abc@gmail.com" id="email" class="form__input">
+                            </div>
+                            <div class="form__group">
+                                <label for="tel" class="form__label">Введіть свій номер:</label>
+                                <input type="tel" pattern="\+38[0-9]{10}|[0-9]{10}" placeholder="+380999999999" id="tel" required class="form__input">
+                            </div>
+                            <div class="form__group">
+                                <label for="comment" class="form__label">Коментар:</label><br>
+                                <textarea name="" id="comment" placeholder="Ваш коментар" class="form__textarea"></textarea>
+                            </div>
+                            <div class="form__group-submit">
+                                <input type="submit" value="Надіслати форму" class="form__submit-button">
+                            </div>
+                            <div class="form__group-reset">
+                                <button type="reset" class="form__reset-button">Очистити форму</button>
+                            </div>
+                        </form>
+                        <img id="image-js" src="./img/pes-patron.png">
+                    </section>
+                    <a class="main__scroll-to-top" href="#top">&#8657;</a>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__social">
+                    <li class="social__links"><a class="links__link" href="https://www.instagram.com/llllenochkaaa/" target="_blank"><img src="./img/inst.png" width="30" height="30"></a></li>
+                    <li class="social__links"><a class="links__link" href="https://t.me/llllenochkaaa" target="_blank"><img src="./img/tg.png" width="30" height="30"></a></li>
+                    <li class="social__links"><a class="links__link" href="https://www.linkedin.com/in/olena-zozulia/" target="_blank"><img src="./img/linkedin.png" width="30" height="30"></a></li>
+                    <li class="social__links"><a class="links__link" href="https://github.com/lenchiksss" target="_blank"><img src="./img/github.png" width="30" height="30"></a></li>
+                    <li class="social__links"><a class="links__link" href="mailto:lenazozula05@gmail.com" target="_blank"><img src="./img/gmail.png" width="30" height="30"></a></li>
+                </div>
+                <div class="footer__rights">
+                    All rights reserved &copy; 2023
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
